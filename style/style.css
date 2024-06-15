@@ -23,7 +23,7 @@
   --color-mint: #39fff3;
   --color-green: #2f3a2c;
   --color-brown: #372b26;
-  --fixed-m: 46px;
+  --fixed-m: 36px;
 }
 
 *,
@@ -52,12 +52,14 @@ body {
   top: var(--fixed-m);
   left: var(--fixed-m);
   display: block;
+  padding: 10px;
   font-weight: 800;
 }
 .fixed--pos-tr {
   top: var(--fixed-m);
   right: var(--fixed-m);
   display: block;
+  padding: 10px;
 }
 .fixed--pos-bl {
   bottom: var(--fixed-m);
