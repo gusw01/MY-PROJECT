@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .tabbox {
+        /* -ms-overflow-style: none; */
+        scrollbar-width: none;
+        /* width: 100%; */
+        overflow-x: scroll;
+        white-space: nowrap;
+      }
+      /* .tabbox::-webkit-scrollbar {
+        display: none;
+      } */
+      ul li {
+        display: inline-flex;
+        /* width: auto; */
+        /* margin-right: 50px; */
+      }
+    </style>
+    <div class="tabbox" id="scroll">
+      <ul>
+        <li><img src="./assets/g_f_cover.png" /></li>
+        <li><img src="./assets/g_t_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <li><img src="./assets/u_d_cover.png" /></li>
+        <!-- 추가 이미지들을 여기에 추가 -->
+      </ul>
+    </div>
+    <script>
+      const scroll = document.getElementById("scroll");
+      let scrollPosition = 0;
+      scroll.addEventListener("wheel", (event) => {
+        // 스크롤 이벤트 발생 시 좌우로 스크롤 이동
+        scrollPosition += event.deltaY;
+        scroll.scrollLeft = scrollPosition;
+      });
+    </script>
+  </body>
+</html>
