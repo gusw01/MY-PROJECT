@@ -44,25 +44,42 @@ body {
 
 .fixed {
   position: fixed;
+  z-index: 10;
+  color: var(--color-black2);
+  text-decoration: none;
 
   &--pos {
     &-tl {
+      position: absolute;
       top: var(--fixed-m);
       left: var(--fixed-m);
+      display: block;
       font-weight: 800;
     }
 
     &-tr {
       top: var(--fixed-m);
       right: var(--fixed-m);
+      display: block;
     }
 
     &-bl {
       bottom: var(--fixed-m);
       left: var(--fixed-m);
+      display: block;
+      padding: 10px;
     }
   }
 }
+
+// .navigation {
+//   position: fixed;
+//   z-index: 10;
+// }
+
+// .home {
+//   position: absolute;
+// }
 
 .section {
   position: fixed;
@@ -98,6 +115,8 @@ body {
   margin-block: 100%;
 
   &--title {
+    display: flex;
+    justify-content: center;
     width: 32px;
     font-size: 48px;
     font-weight: 400;
@@ -112,8 +131,6 @@ body {
   &--content {
     width: 75px;
 
-    // height: 640px;
-
     &-title {
       top: 182px;
       right: 122px;
@@ -124,13 +141,14 @@ body {
     }
 
     &-logo {
-      margin-top: 406px;
-      margin-bottom: 25px;
+      padding-top: 406px;
+      margin: 0;
       text-align: center;
     }
 
     &-number {
-      margin-block: 30px;
+      padding-block: 30px;
+      margin: 0;
       font-size: 16px;
       font-weight: 600;
       text-align: center;

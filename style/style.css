@@ -43,19 +43,27 @@ body {
 
 .fixed {
   position: fixed;
+  z-index: 10;
+  color: var(--color-black2);
+  text-decoration: none;
 }
 .fixed--pos-tl {
+  position: absolute;
   top: var(--fixed-m);
   left: var(--fixed-m);
+  display: block;
   font-weight: 800;
 }
 .fixed--pos-tr {
   top: var(--fixed-m);
   right: var(--fixed-m);
+  display: block;
 }
 .fixed--pos-bl {
   bottom: var(--fixed-m);
   left: var(--fixed-m);
+  display: block;
+  padding: 10px;
 }
 
 .section {
@@ -92,6 +100,8 @@ body {
   margin-block: 100%;
 }
 .cartagorie--title {
+  display: flex;
+  justify-content: center;
   width: 32px;
   font-size: 48px;
   font-weight: 400;
@@ -113,12 +123,13 @@ body {
   transform: rotate(90deg);
 }
 .cartagorie--content-logo {
-  margin-top: 406px;
-  margin-bottom: 25px;
+  padding-top: 406px;
+  margin: 0;
   text-align: center;
 }
 .cartagorie--content-number {
-  margin-block: 30px;
+  padding-block: 30px;
+  margin: 0;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
