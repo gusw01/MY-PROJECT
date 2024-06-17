@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style/style.css" />
+    <script src="./script/script.js" defer></script>
   </head>
 
   <body>
@@ -30,14 +31,14 @@
       ABOUT
     </a>
 
-    <div class="section" id="scroll">
+    <div class="section" id="vscroll">
       <div class="container container--uxui v-line">
         <div class="cartagorie cartagorie--title">UXUI</div>
         <div class="cartagorie cartagorie--list">
           <div
             class="cartagorie cartagorie--content cartagorie--content--mu"
             style="cursor: pointer"
-            onclick="location.href='https://gusw01.github.io/MY_PROJECT/'; "
+            onclick="location.href='https://gusw01.github.io/MY_PROJECT/src/musiclog/'; "
             aria-current="page"
           >
             <div
@@ -297,14 +298,5 @@
         </div>
       </div>
     </div>
-    <script>
-      const scroll = document.getElementById("scroll");
-      let scrollPosition = 0;
-      scroll.addEventListener("wheel", (event) => {
-        // 스크롤 이벤트 발생 시 좌우로 스크롤 이동
-        scrollPosition += event.deltaY;
-        scroll.scrollLeft = scrollPosition;
-      });
-    </script>
   </body>
 </html>
