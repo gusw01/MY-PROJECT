@@ -1,4 +1,10 @@
 @import "https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap";
+@font-face {
+  font-family: Pretendard-Regular;
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+}
 :root {
   --color-black1: #000;
   --color-black2: #303132;
@@ -48,7 +54,6 @@ body {
   text-decoration: none;
 }
 .fixed--pos-tl {
-  position: absolute;
   top: var(--fixed-m);
   left: var(--fixed-m);
   display: block;
@@ -74,7 +79,7 @@ body {
   padding: 10px;
 }
 
-.section {
+.section--home {
   position: fixed;
   align-items: flex-start;
   width: 100%;

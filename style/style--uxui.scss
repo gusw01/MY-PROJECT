@@ -1,0 +1,119 @@
+.section {
+  &--app {
+    position: fixed;
+    width: 100%;
+    min-width: 900px;
+    height: 100%;
+    padding-block: 86px;
+    padding-inline: 46px;
+    margin: 0;
+
+    &-page {
+      position: fixed;
+      padding-block: 86px;
+      padding-inline: 46px;
+    }
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  gap: 50px;
+  align-content: center;
+  min-width: 900px;
+  margin-block: auto;
+
+  &--scroll {
+  }
+
+  &--middle {
+    img {
+      z-index: 10;
+      display: block;
+      width: 80%;
+      margin-inline: auto;
+    }
+
+    &-page {
+      img {
+        display: block;
+        width: 72%;
+
+        // margin: 0;
+      }
+
+      &-box {
+        width: 90%;
+        background-color: #bbb5a7;
+      }
+
+      height: 16.35%;
+      margin-block: 4.2%;
+      overflow: scroll;
+      white-space: nowrap;
+      background-color: aqua;
+      border-radius: 26px;
+      scrollbar-width: none;
+    }
+  }
+
+  &--right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &-top,
+    &-bottom {
+      position: absolute;
+      gap: 20px;
+    }
+
+    &-top {
+      top: 0;
+    }
+
+    &-bottom {
+      bottom: 0;
+    }
+
+    &-group {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-title {
+      width: 115px;
+      padding-right: 50px;
+      font-size: 20px;
+      font-weight: 400;
+
+      &-project {
+        padding-bottom: 20px;
+      }
+    }
+
+    &-p {
+      font-family: Pretendard;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+      color: #656565;
+    }
+  }
+
+  &--left {
+    position: relative;
+
+    &-title {
+      position: sticky;
+      top: 86px;
+      display: block;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 150%;
+      color: #bbb5a7;
+    }
+  }
+}
