@@ -18,11 +18,12 @@
   color: #8e5cff;
 }
 
-.mi {
-  background-color: #f5f5f5;
-}
 .mi-point {
   color: #f58220;
+}
+
+.p-point {
+  color: #fe312e;
 }
 
 .fixed {

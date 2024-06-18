@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POP, UP!</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/style--uxui-app.css" />
+    <script src="../script/script.js" defer></script>
+  </head>
+  <body class="p">
+    <a
+      href="https://gusw01.github.io/MY_PROJECT/"
+      aria-current="page"
+      class="fixed fixed--pos-tl"
+    >
+      PORTFOLIO
+    </a>
+    <div aria-current="page" class="fixed fixed--pos-tr fixed--role-work">
+      POP, UP! UX/UI Web Design
+    </div>
+    <a
+      href="https://gusw01.github.io/MY_PROJECT/"
+      aria-current="page"
+      class="fixed fixed--pos-bl fixed--role-about"
+    >
+      BACK
+    </a>
+    <a
+      href="#1"
+      aria-current="page"
+      class="fixed fixed--pos-br fixed--role-about"
+    >
+      TOP
+    </a>
+    <div class="section section--bg section--bg-p p-point">POP, UP!</div>
+    <div class="fixed fixed--pos-bl section--list">
+      <a href="#1" class="p-point">(1) HOME</a>
+      <a href="#2" class="p-point">(2) INTRODUCTION</a>
+      <a href="#3" class="p-point">(3) WORK</a>
+      <a href="#4" class="p-point">(4) PROFILE</a>
+      <a href="#5" class="p-point">(5) PARTICIPANT</a>
+      <a href="#6" class="p-point">(6) GUESTBOOK</a>
+    </div>
+
+    <div class="section section--mockup section--mockup-pc">
+      <img src="../assets/uxui/MacBookPro.png" alt="MacBookPro" />
+    </div>
+    <div class="section section--info">
+      <div class="info info-pc">
+        <div class="info info-top">
+          <div class="info info-group">
+            <div class="info info-title">Overview</div>
+            <div class="info info-p info-p-p">
+              명지전문대 커뮤니케이션디자인과의 2023 졸업전시 사이트를
+              디자인하고 개발사와 협업하여 온라인 전시를 오픈하는 실무형
+              프로젝트로, "일상의 평범함 속에서 돋보이는 특별함"이라는 POP, UP!
+              컨셉에 맞춰 반응형 웹사이트를 기획·디자인하였다.
+            </div>
+          </div>
+          <div class="info info-group">
+            <div class="info info-title">Period</div>
+            <div class="info info-p info-p-p">2023.09 - 2023.11</div>
+          </div>
+        </div>
+        <div class="info info-bottom">
+          <div class="info info-group">
+            <div class="info info-title">Project</div>
+            <div class="info--project">
+              <div class="info info-title info-title-project">Team</div>
+              <div class="info info-p info-p-p">UX/UI팀 | 디자인 4인</div>
+            </div>
+          </div>
+          <div class="info info-group">
+            <div class="info info-title">Tool</div>
+            <div class="info info-p info-p-p">Figma</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section--page">
+      <div class="content-pc">
+        <img src="../assets/uxui/popup/home.png" alt="home" id="1" />
+        <img
+          src="../assets/uxui/popup/introduction1.png"
+          alt="introduction1"
+          id="2"
+        />
+        <img src="../assets/uxui/popup/introduction2.png" alt="introduction2" />
+        <img src="../assets/uxui/popup/introduction3.png" alt="introduction3" />
+        <img src="../assets/uxui/popup/work.png" alt="work" id="3" />
+        <img src="../assets/uxui/popup/profile.png" alt="profile" id="4" />
+        <img
+          src="../assets/uxui/popup/participants.png"
+          alt="participants"
+          id="5"
+        />
+        <img
+          src="../assets/uxui/popup/guestbooks.png"
+          alt="guestbooks"
+          id="6"
+        />
+      </div>
+    </div>
+
+    <script>
+      let observer = new IntersectionObserver((e) => {
+        e.forEach((박스) => {
+          if (박스.isIntersecting) {
+            박스.target.style.opacity = 1;
+          } else {
+            박스.target.style.opacity = 0;
+          }
+        });
+      });
+      let img = document.querySelectorAll("img");
+      observer.observe(img[0]);
+      observer.observe(img[1]);
+      observer.observe(img[2]);
+      observer.observe(img[3]);
+      observer.observe(img[4]);
+      observer.observe(img[5]);
+      observer.observe(img[6]);
+      observer.observe(img[7]);
+      observer.observe(img[8]);
+      observer.observe(img[9]);
+      observer.observe(img[10]);
+      observer.observe(img[11]);
+      observer.observe(img[12]);
+      observer.observe(img[13]);
+      observer.observe(img[14]);
+      observer.observe(img[15]);
+      observer.observe(img[16]);
+      observer.observe(img[17]);
+      observer.observe(img[18]);
+      observer.observe(img[19]);
+      observer.observe(img[20]);
+      observer.observe(img[21]);
+      observer.observe(img[22]);
+      observer.observe(img[23]);
+      observer.observe(img[24]);
+      observer.observe(img[25]);
+    </script>
+  </body>
+</html>
