@@ -1,10 +1,25 @@
+.mu {
+  &-point {
+    color: #fb5b3f;
+  }
+}
+
 .w {
   color: #656565;
   background-color: #000;
+
+  &-point {
+    color: #ff0558;
+  }
 }
 
-.fixed {
-  color: #656565;
+.d {
+  color: #3b2f5b;
+  background-color: #f5f4f9;
+
+  &-point {
+    color: #8e5cff;
+  }
 }
 
 .section {
@@ -39,13 +54,6 @@
       text-decoration: none;
     }
 
-    &-mu {
-      color: #fb5b3f;
-    }
-
-    &-w {
-      color: #ff0558;
-    }
     @media screen and (width <= 900px) {
       display: none;
     }
@@ -62,7 +70,6 @@
     letter-spacing: 2.6px;
 
     &-mu {
-      color: #ff6246;
       @media screen and (width <= 900px) {
         font-size: 180px;
       }
@@ -70,9 +77,15 @@
 
     &-w {
       font-size: 180px;
-      color: #ff0558;
+
       @media screen and (width <= 900px) {
         font-size: 130px;
+      }
+    }
+
+    &-d {
+      @media screen and (width <= 900px) {
+        letter-spacing: 40px;
       }
     }
 
@@ -88,6 +101,7 @@
   }
 
   &--notch {
+    position: relative;
     z-index: 10;
     display: flex;
     justify-content: center;

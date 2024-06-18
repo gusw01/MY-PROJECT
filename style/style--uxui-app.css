@@ -1,10 +1,21 @@
+.mu-point {
+  color: #fb5b3f;
+}
+
 .w {
   color: #656565;
   background-color: #000;
 }
+.w-point {
+  color: #ff0558;
+}
 
-.fixed {
-  color: #656565;
+.d {
+  color: #3b2f5b;
+  background-color: #f5f4f9;
+}
+.d-point {
+  color: #8e5cff;
 }
 
 .section {
@@ -36,12 +47,6 @@
   line-height: 150%;
   text-decoration: none;
 }
-.section--list-mu {
-  color: #fb5b3f;
-}
-.section--list-w {
-  color: #ff0558;
-}
 @media screen and (width <= 900px) {
   .section--list {
     display: none;
@@ -57,9 +62,6 @@
   text-align: center;
   letter-spacing: 2.6px;
 }
-.section--bg-mu {
-  color: #ff6246;
-}
 @media screen and (width <= 900px) {
   .section--bg-mu {
     font-size: 180px;
@@ -67,11 +69,15 @@
 }
 .section--bg-w {
   font-size: 180px;
-  color: #ff0558;
 }
 @media screen and (width <= 900px) {
   .section--bg-w {
     font-size: 130px;
+  }
+}
+@media screen and (width <= 900px) {
+  .section--bg-d {
+    letter-spacing: 40px;
   }
 }
 @media screen and (width <= 500px) {
@@ -85,6 +91,7 @@
   margin: auto;
 }
 .section--notch {
+  position: relative;
   z-index: 10;
   display: flex;
   justify-content: center;
