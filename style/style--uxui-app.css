@@ -1,3 +1,12 @@
+.w {
+  color: #656565;
+  background-color: #000;
+}
+
+.fixed {
+  color: #656565;
+}
+
 .section {
   position: fixed;
   width: 100%;
@@ -30,6 +39,9 @@
 .section--list-mu {
   color: #fb5b3f;
 }
+.section--list-w {
+  color: #ff0558;
+}
 @media screen and (width <= 900px) {
   .section--list {
     display: none;
@@ -49,8 +61,17 @@
   color: #ff6246;
 }
 @media screen and (width <= 900px) {
-  .section--bg {
+  .section--bg-mu {
     font-size: 180px;
+  }
+}
+.section--bg-w {
+  font-size: 180px;
+  color: #ff0558;
+}
+@media screen and (width <= 900px) {
+  .section--bg-w {
+    font-size: 130px;
   }
 }
 @media screen and (width <= 500px) {
@@ -107,6 +128,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+}
+.info-p-mu {
   color: #656565;
 }
 
@@ -126,4 +149,5 @@
   height: 510.967px;
   opacity: 0;
   scroll-snap-align: start;
+  transition: all 1.2s;
 }

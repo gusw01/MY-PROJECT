@@ -1,3 +1,12 @@
+.w {
+  color: #656565;
+  background-color: #000;
+}
+
+.fixed {
+  color: #656565;
+}
+
 .section {
   position: fixed;
   width: 100%;
@@ -33,6 +42,10 @@
     &-mu {
       color: #fb5b3f;
     }
+
+    &-w {
+      color: #ff0558;
+    }
     @media screen and (width <= 900px) {
       display: none;
     }
@@ -50,11 +63,19 @@
 
     &-mu {
       color: #ff6246;
+      @media screen and (width <= 900px) {
+        font-size: 180px;
+      }
     }
 
-    @media screen and (width <= 900px) {
+    &-w {
       font-size: 180px;
+      color: #ff0558;
+      @media screen and (width <= 900px) {
+        font-size: 130px;
+      }
     }
+
     @media screen and (width <= 500px) {
       display: none;
     }
@@ -115,11 +136,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
-    color: #656565;
-  }
-}
 
-.list {
+    &-mu {
+      color: #656565;
+    }
+  }
 }
 
 .content {
@@ -138,5 +159,6 @@
     height: 510.967px;
     opacity: 0;
     scroll-snap-align: start;
+    transition: all 1.2s;
   }
 }
