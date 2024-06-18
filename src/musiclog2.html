@@ -27,15 +27,24 @@
       BACK
     </a>
     <a
-      href=""
+      href="#1"
       aria-current="page"
       class="fixed fixed--pos-br fixed--role-about"
     >
       TOP
     </a>
+    <div class="section section--bg">MUSI CLOG</div>
+    <div class="fixed fixed--pos-bl section--list">
+      <a href="#1">(1) ONBOARDING</a>
+      <a href="#2">(2) MUSIC LOG CALENDAR</a>
+      <a href="#3">(3) ADD MUSIC LOG</a>
+      <a href="#4">(4) VIEW MUSIC LOG</a>
+      <a href="#5">(5) MY PLAYLIST</a>
+      <a href="#6">(6) MUSIC LOUNGE</a>
+    </div>
     <div class="section section--mockup">
       <img
-        src="../assets/iPhone14.png"
+        src="../assets/uxui/iPhone14.png"
         alt="iPhone14"
         width="265.17px"
         height="537px"
@@ -75,15 +84,85 @@
         </div>
       </div>
     </div>
+
     <div class="section section--page">
       <div class="content">
-        <img src="../assets/uxui/musiclog/onboarding1.png" alt="onboarding1" />
+        <img
+          src="../assets/uxui/musiclog/onboarding1.png"
+          alt="onboarding1"
+          id="1"
+        />
         <img src="../assets/uxui/musiclog/onboarding2.png" alt="onboarding2" />
         <img src="../assets/uxui/musiclog/onboarding3.png" alt="onboarding3" />
-        <img src="../assets/uxui/musiclog/onboarding1.png" alt="onboarding1" />
-        <img src="../assets/uxui/musiclog/onboarding2.png" alt="onboarding2" />
-        <img src="../assets/uxui/musiclog/onboarding3.png" alt="onboarding3" />
+        <img
+          src="../assets/uxui/musiclog/calender1.png"
+          alt="calender1"
+          id="2"
+        />
+        <img src="../assets/uxui/musiclog/calender2.png" alt="calender2" />
+        <img src="../assets/uxui/musiclog/add1-1.png" alt="add1-1" id="3" />
+        <img src="../assets/uxui/musiclog/add1-2.png" alt="add1-2" />
+        <img src="../assets/uxui/musiclog/add1-3.png" alt="add1-3" />
+        <img src="../assets/uxui/musiclog/add1-4.png" alt="add1-4" />
+        <img src="../assets/uxui/musiclog/add2.png" alt="add2" />
+        <img src="../assets/uxui/musiclog/add3.png" alt="add3" />
+        <img src="../assets/uxui/musiclog/add4.png" alt="add4" />
+        <img src="../assets/uxui/musiclog/view1.png" alt="view1" id="4" />
+        <img src="../assets/uxui/musiclog/view2.png" alt="view2" />
+        <img src="../assets/uxui/musiclog/view3.png" alt="view3" />
+        <img
+          src="../assets/uxui/musiclog/myplaylist1.png"
+          alt="myplaylist1"
+          id="5"
+        />
+        <img src="../assets/uxui/musiclog/myplaylist2.png" alt="myplaylist2" />
+        <img src="../assets/uxui/musiclog/myplaylist3.png" alt="myplaylist3" />
+        <img
+          src="../assets/uxui/musiclog/lounge1-1.png"
+          alt="lounge1-1"
+          id="6"
+        />
+        <img src="../assets/uxui/musiclog/lounge1-2.png" alt="lounge1-2" />
+        <img src="../assets/uxui/musiclog/lounge1-3.png" alt="lounge1-3" />
       </div>
     </div>
+    <script>
+      let observer = new IntersectionObserver((e) => {
+        e.forEach((박스) => {
+          if (박스.isIntersecting) {
+            박스.target.style.opacity = 1;
+          } else {
+            박스.target.style.opacity = 0;
+          }
+        });
+      });
+      let img = document.querySelectorAll("img");
+      observer.observe(img[0]);
+      observer.observe(img[1]);
+      observer.observe(img[2]);
+      observer.observe(img[3]);
+      observer.observe(img[4]);
+      observer.observe(img[5]);
+      observer.observe(img[6]);
+      observer.observe(img[7]);
+      observer.observe(img[8]);
+      observer.observe(img[9]);
+      observer.observe(img[10]);
+      observer.observe(img[11]);
+      observer.observe(img[12]);
+      observer.observe(img[13]);
+      observer.observe(img[14]);
+      observer.observe(img[15]);
+      observer.observe(img[16]);
+      observer.observe(img[17]);
+      observer.observe(img[18]);
+      observer.observe(img[19]);
+      observer.observe(img[20]);
+      observer.observe(img[21]);
+      observer.observe(img[22]);
+      observer.observe(img[23]);
+      observer.observe(img[24]);
+      observer.observe(img[25]);
+    </script>
   </body>
 </html>

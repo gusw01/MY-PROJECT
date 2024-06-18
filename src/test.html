@@ -6,65 +6,171 @@
     <title>Document</title>
   </head>
   <body>
-    <style>
-      .tabbox {
-        /* -ms-overflow-style: none; */
-        scrollbar-width: none;
-        /* width: 100%; */
-        overflow-x: scroll;
-        white-space: nowrap;
-      }
-      /* .tabbox::-webkit-scrollbar {
-        display: none;
-      } */
-      ul li {
-        display: inline-flex;
-        /* width: auto; */
-        /* margin-right: 50px; */
+    <!-- <style>
+      img {
+        opacity: 0;
+        transition: all 0.5s;
+        /* margin-top: 1000px; */
       }
     </style>
-    <div class="tabbox" id="scroll">
-      <ul>
-        <li><img src="./assets/g_f_cover.png" /></li>
-        <li><img src="./assets/g_t_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <li><img src="./assets/u_d_cover.png" /></li>
-        <!-- 추가 이미지들을 여기에 추가 -->
-      </ul>
+    <div>dssss</div>
+    <img src="../assets/uxui/musiclog/add1-1.png" alt="" />
+    <img src="../assets/uxui/musiclog/add1-2.png" alt="" />
+    <img src="../assets/uxui/musiclog/add1-3.png" alt="" />
+    <img src="../assets/uxui/musiclog/add1-4.png" alt="" />
+    <script>
+      let observer = new IntersectionObserver((e) => {
+        e.forEach((박스) => {
+          if (박스.isIntersecting) {
+            박스.target.style.opacity = 1;
+          } else {
+            박스.target.style.opacity = 0;
+          }
+        });
+      });
+      let img = document.querySelectorAll("img");
+      observer.observe(img[0]);
+      observer.observe(img[1]);
+      observer.observe(img[2]);
+      observer.observe(img[3]);
+    </script> -->
+    <!-- <style>
+      * {
+        transition-duration: 0.8s;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .section {
+        height: 510.967px;
+        /* overflow: scroll; */
+      }
+      .content {
+        /* width: 100%; */
+        font-size: 32px;
+        text-align: center;
+      }
+      img {
+        width: 236.11px;
+        height: 510.967px;
+      }
+      .wrap {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+      }
+    </style>
+
+    <!-- <div class="section">
+      <div
+        class="content"
+        style="font-size: 32px; text-align: center; background-color: white"
+      >
+        <img src="../assets/uxui/musiclog/add1-1.png" alt="" />
+      </div>
+      <div
+        class="content"
+        style="font-size: 32px; text-align: center; background-color: skyblue"
+      >
+        2
+      </div>
+      <div
+        class="content"
+        style="font-size: 32px; text-align: center; background-color: pink"
+      >
+        3
+      </div>
+      <div
+        class="content"
+        style="
+          font-size: 32px;
+          text-align: center;
+          background-color: palegoldenrod;
+        "
+      >
+        4
+      </div>
+      <div
+        class="content"
+        style="font-size: 32px; text-align: center; background-color: violet"
+      >
+        5
+      </div>
+    </div> -->
+
+    <!-- <div class="wrap">
+      
+      <div class="section section--page">
+        <div class="scroll">
+          <img
+            src="../assets/uxui/musiclog/onboarding1.png"
+            alt="onboarding1"
+            id="1"
+          />
+        </div>
+        <div class="scroll">
+          <img
+            src="../assets/uxui/musiclog/onboarding1.png"
+            alt="onboarding1"
+            id="1"
+          />
+        </div>
+        <div class="scroll">
+          <img
+            src="../assets/uxui/musiclog/onboarding1.png"
+            alt="onboarding1"
+            id="1"
+          />
+        </div>
+      </div>
     </div>
     <script>
-      const scroll = document.getElementById("scroll");
-      let scrollPosition = 0;
-      scroll.addEventListener("wheel", (event) => {
-        // 스크롤 이벤트 발생 시 좌우로 스크롤 이동
-        scrollPosition += event.deltaY;
-        scroll.scrollLeft = scrollPosition;
-      });
-    </script>
+      window.onload = function () {
+        const elm = document.querySelectorAll(".scroll");
+        const elmCount = elm.length;
+        elm.forEach(function (item, index) {
+          item.addEventListener("mousewheel", function (event) {
+            event.preventDefault();
+            let delta = 0;
+
+            if (!event) event = window.event;
+            if (event.wheelDelta) {
+              delta = event.wheelDelta / 120;
+              if (window.opera) delta = -delta;
+            } else if (event.detail) delta = -event.detail / 3;
+
+            let moveTop = window.scrollY;
+            let elmSelector = elm[index];
+
+            // wheel down : move to next section
+            if (delta < 0) {
+              if (elmSelector !== elmCount - 1) {
+                try {
+                  moveTop =
+                    window.pageYOffset +
+                    elmSelector.nextElementSibling.getBoundingClientRect().top;
+                } catch (e) {}
+              }
+            }
+            // wheel up : move to previous section
+            else {
+              if (elmSelector !== 0) {
+                try {
+                  moveTop =
+                    window.pageYOffset +
+                    elmSelector.previousElementSibling.getBoundingClientRect()
+                      .top;
+                } catch (e) {}
+              }
+            }
+
+            const body = document.querySelector("html");
+            window.scrollTo({ top: moveTop, left: 0, behavior: "smooth" });
+          });
+        });
+      };
+    </script> -->
   </body>
 </html>

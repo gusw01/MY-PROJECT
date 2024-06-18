@@ -42,12 +42,16 @@
 }
 
 body {
+  min-width: 500px;
   margin: 0;
   font-family: Archivo, sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: var(--color-black2);
   background-color: var(--color-begie2);
+  @media screen and (width <= 900px) {
+    font-size: 16px;
+  }
 }
 
 .fixed {
@@ -96,7 +100,8 @@ body {
     // gap: 190px;
     align-items: flex-start;
     width: 100%;
-    min-width: 900px;
+
+    // min-width: 900px;
     height: 100%;
     padding-inline: 250px;
     margin-block: auto;
