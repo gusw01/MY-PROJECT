@@ -22,6 +22,10 @@
   }
 }
 
+.fixed {
+  z-index: 20;
+}
+
 .section {
   position: fixed;
   width: 100%;

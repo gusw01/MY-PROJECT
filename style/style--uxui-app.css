@@ -18,6 +18,10 @@
   color: #8e5cff;
 }
 
+.fixed {
+  z-index: 20;
+}
+
 .section {
   position: fixed;
   width: 100%;
