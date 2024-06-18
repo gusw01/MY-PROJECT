@@ -22,6 +22,14 @@
   }
 }
 
+.mi {
+  background-color: #f5f5f5;
+
+  &-point {
+    color: #f58220;
+  }
+}
+
 .fixed {
   z-index: 20;
 }
@@ -38,6 +46,18 @@
     display: flex;
     justify-content: center;
     margin: auto;
+
+    &-pc {
+      > img {
+        width: 779px;
+        height: 535px;
+        @media screen and (width <= 900px) {
+          width: 365px;
+          height: 251px;
+          margin-block: auto;
+        }
+      }
+    }
   }
 
   &--info {
@@ -93,6 +113,13 @@
       }
     }
 
+    &-mi {
+      font-size: 220px;
+      @media screen and (width <= 900px) {
+        font-size: 160px;
+      }
+    }
+
     @media screen and (width <= 500px) {
       display: none;
     }
@@ -119,6 +146,13 @@
   flex-direction: column;
   width: 100%;
   padding-left: 460px;
+
+  &-pc {
+    padding-left: 680px;
+    @media screen and (width <= 900px) {
+      display: none;
+    }
+  }
 
   &-bottom {
     position: fixed;
@@ -171,6 +205,24 @@
   scrollbar-width: none;
   border-radius: 26px;
   scroll-snap-type: y mandatory;
+
+  &-pc {
+    display: flex;
+    flex-direction: column;
+    width: 738.64px;
+    height: 462.55px;
+    margin-block: 29.69px;
+    overflow-y: scroll;
+    white-space: nowrap;
+    scrollbar-width: none;
+    scroll-snap-type: y mandatory;
+    @media screen and (width <= 900px) {
+      width: 346.09px;
+      height: 217.01px;
+      margin-block: 13.03px;
+      margin-block: auto;
+    }
+  }
 
   img {
     width: 236.11px;
