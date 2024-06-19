@@ -9,7 +9,12 @@
   background-color: #000;
 
   &-point {
-    color: #ff0558;
+    color: #ff0558 !important;
+  }
+
+  a,
+  .fixed {
+    color: #a6a6a6;
   }
 }
 
