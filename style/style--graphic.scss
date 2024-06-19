@@ -1,8 +1,14 @@
-.f {
+.fl {
   background-color: #afaaa5;
 
   &-point {
     color: #f4f0ed;
+  }
+}
+
+.fo {
+  &-point {
+    color: #e0ae41;
   }
 }
 
@@ -76,10 +82,17 @@
     text-align: center;
     letter-spacing: 2.6px;
 
-    &-f {
+    &-fl {
       font-size: 220px;
       @media screen and (width <= 900px) {
         font-size: 160px;
+      }
+    }
+
+    &-fo {
+      font-size: 120px;
+      @media screen and (width <= 900px) {
+        font-size: 100px;
       }
     }
 
@@ -167,7 +180,28 @@
     width: 1078.07px;
     min-width: 346.09px;
     height: 644px;
-    margin-block: 29.69px;
+
+    // margin-block: 29.69px;
+    overflow-y: scroll;
+    white-space: nowrap;
+    scrollbar-width: none;
+    scroll-snap-type: y mandatory;
+
+    > img {
+      opacity: 0;
+      scroll-snap-align: start;
+      transition: all 1.2s;
+    }
+  }
+
+  &-book2 {
+    display: flex;
+    flex-direction: column;
+    width: 734px;
+    min-width: 346.09px;
+    height: 519px;
+
+    // margin-block: 29.69px;
     overflow-y: scroll;
     white-space: nowrap;
     scrollbar-width: none;
