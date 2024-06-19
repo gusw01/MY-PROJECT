@@ -68,9 +68,15 @@ body {
     &-tl {
       top: var(--fixed-m);
       left: var(--fixed-m);
-      display: block;
+      display: flex;
+      align-items: center;
       padding: 10px;
       font-weight: 800;
+
+      > img {
+        // margin-top: 2px;
+        margin-right: 8px;
+      }
     }
 
     &-tr {
@@ -226,8 +232,8 @@ body {
     }
 
     &--fo {
-      color: var(--color-yellow2);
-      background-color: var(--color-green);
+      color: var(--color-green);
+      background-color: var(--color-yellow3);
     }
 
     &--i {

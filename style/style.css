@@ -66,9 +66,13 @@ body {
 .fixed--pos-tl {
   top: var(--fixed-m);
   left: var(--fixed-m);
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 10px;
   font-weight: 800;
+}
+.fixed--pos-tl > img {
+  margin-right: 8px;
 }
 .fixed--pos-tr {
   top: var(--fixed-m);
@@ -195,8 +199,8 @@ body {
   background-color: var(--color-black1);
 }
 .cartagorie--content--fo {
-  color: var(--color-yellow2);
-  background-color: var(--color-green);
+  color: var(--color-green);
+  background-color: var(--color-yellow3);
 }
 .cartagorie--content--i {
   color: var(--color-black2);
