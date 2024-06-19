@@ -54,6 +54,10 @@ body {
   }
 }
 
+.invisible {
+  display: none;
+}
+
 .fixed {
   position: fixed;
   z-index: 10;
