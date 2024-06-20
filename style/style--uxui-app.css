@@ -205,6 +205,32 @@
   scrollbar-width: none;
   scroll-snap-type: y mandatory;
 }
+.content-scroll {
+  position: absolute;
+  top: 220px;
+  font-size: 32px;
+  color: #fff;
+  opacity: 0;
+  animation: scroll 3s ease-in-out;
+  scroll-snap-type: none;
+}
+.content-scroll-pc {
+  top: 320px;
+}
+.content-scroll-b {
+  color: #000;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .content-pc {
   display: flex;
   flex-direction: column;

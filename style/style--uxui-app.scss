@@ -232,6 +232,37 @@
   scrollbar-width: none;
   scroll-snap-type: y mandatory;
 
+  &-scroll {
+    position: absolute;
+    top: 220px;
+    font-size: 32px;
+    color: #fff;
+    opacity: 0;
+    animation: scroll 3s ease-in-out;
+    scroll-snap-type: none;
+
+    &-pc {
+      top: 320px;
+    }
+
+    &-b {
+      color: #000;
+    }
+  }
+  @keyframes scroll {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
   &-pc {
     display: flex;
     flex-direction: column;
