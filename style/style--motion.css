@@ -29,6 +29,9 @@
 .fixed {
   z-index: 20;
 }
+.fixed--pos-tl {
+  margin-block: 3.6px;
+}
 
 .section {
   position: fixed;

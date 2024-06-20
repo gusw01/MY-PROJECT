@@ -16,6 +16,10 @@
   z-index: 20;
 
   &--pos {
+    &-tl {
+      margin-block: 3.6px;
+    }
+
     &-tr {
       text-align: right;
     }

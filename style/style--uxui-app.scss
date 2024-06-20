@@ -45,6 +45,10 @@
   z-index: 20;
 
   &--pos {
+    &-tl {
+      margin-block: 3.6px;
+    }
+
     &-tr {
       text-align: right;
     }
@@ -216,6 +220,7 @@
 }
 
 .content {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;

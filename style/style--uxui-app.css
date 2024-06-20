@@ -33,6 +33,9 @@
 .fixed {
   z-index: 20;
 }
+.fixed--pos-tl {
+  margin-block: 3.6px;
+}
 .fixed--pos-tr {
   text-align: right;
 }
@@ -190,6 +193,7 @@
 }
 
 .content {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;

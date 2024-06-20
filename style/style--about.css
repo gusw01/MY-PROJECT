@@ -1,3 +1,7 @@
+.fixed--pos-tl {
+  margin-block: 3.6px;
+}
+
 .section--about {
   display: flex;
   flex-wrap: wrap;
